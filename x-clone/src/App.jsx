@@ -4,7 +4,9 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 
+//traffic controller
 function App() {
+  //fetching the current user from the auth context
   const { user } = useAuth();
 
   return (
@@ -12,7 +14,7 @@ function App() {
       <Route path="/login" element={!user ? <Login /> : <Navigate to="/" />} />
       <Route
         path="/signup"
-        element={!user ? <Signup /> : <Navigate to="/" />}
+        element={!user ? <Signup /> : <Navigate to = "/" />}
       />
       <Route path="/" element={user ? <Home /> : <Navigate to="/login" />} />
     </Routes>
