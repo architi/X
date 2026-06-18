@@ -1,38 +1,14 @@
-import Sidebar from "../src/components/Sidebar";
+import Sidebar from ".../components/Sidebar";
 
 function Home() {
   return (
-    <div
-      style={{ display: "flex", backgroundColor: "#000", minHeight: "100vh" }}
-    >
+    <div className="flex bg-black min-h-screen text-white">
       <Sidebar />
-
-      <div
-        style={{
-          marginLeft: "275px",
-          flex: 1,
-          maxWidth: "600px",
-          borderRight: "1px solid #2f3336",
-          color: "#fff",
-        }}
-      >
-        <div
-          style={{
-            padding: "16px",
-            borderBottom: "1px solid #2f3336",
-            fontSize: "20px",
-            fontWeight: "bold",
-            position: "sticky",
-            top: 0,
-            backgroundColor: "#000",
-          }}
-        >
+      <div className="ml-[275px] flex-1 max-w-[600px] border-r border-[#2f3336]">
+        <div className="p-4 border-b border-[#2f3336] text-xl font-bold sticky top-0 bg-black">
           Home
         </div>
-
-        <div style={{ padding: "16px", color: "#71767b" }}>
-          Feed will go here
-        </div>
+        <div className="p-4 text-[#71767b]">Feed will go here</div>
       </div>
     </div>
   );
