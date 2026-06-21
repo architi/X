@@ -1,5 +1,6 @@
 import Sidebar from ".../components/Sidebar";
 
+//home page 
 function Home() {
   return (
     <div className="flex bg-black min-h-screen text-white">
