@@ -15,7 +15,7 @@ function Home() {
 
         {/* Feed */}
         <div className='p-4 text-[#71767b]'>
-          Feed will go here
+          feed demo
         </div>
 
       </main>
